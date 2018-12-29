@@ -1,4 +1,4 @@
-package com.devopsbuddy.controllers;
+package com.devopsbuddy.web.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,6 +8,8 @@ public class HelloWorldController {
 
     @RequestMapping("/")
     public String sayHello(){
+        System.out.println("Entered Hello World controller");
+
         return "index";
     }
 }
